@@ -1,0 +1,407 @@
+html{
+	font-size: 1rem;
+	scroll-behavior: smooth;
+}
+
+body{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.nav{
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+.nav ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.nav ul li a{
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #fff;
+	padding: 1rem;
+}
+
+.nav ul li a:hover{
+	color: #fff792;
+}
+
+.container{
+	width: 100%;
+	background-color: #fff792;
+	margin-top: 5rem;
+}
+
+p{
+	font-family: "Raleway", Bell MT;
+}
+
+h1{
+	font-family: "Play", Bell MT;
+}
+
+h2{
+	font-family: "Play", Bell MT;
+}
+
+.left{
+	margin-right: 5rem;
+}
+
+.right{
+	margin-left: 5rem;
+}
+
+.Welcome{
+	width: 100%;
+	height: 100vh;
+	background-color: #f5f4e4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.Welcome p{
+	font-size: 2rem;
+	margin: 0;
+	padding: 0.3rem;
+}
+
+.Welcome h1{
+	font-size: 3.5rem;
+	margin: 0;
+	padding: 0.2rem;
+}
+
+.section-title{
+	font-size: 2rem;
+	margin-left: 2rem;
+}
+
+.About{
+	width: 100%;
+	height: auto;
+	padding-bottom: 2rem;
+}
+
+.about-content{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.about-content p{
+	font-size: 2rem;
+	margin: 0;
+	padding: 0.5rem;
+}
+
+.text{
+	font-size: 2rem;
+	font-family: "Raleway", Open Sans;
+	margin: 0;
+	padding: 0 0.7rem;
+}
+
+.text-container{
+	display: flex;
+	flex-direction: row;
+}
+
+.text-container .text-box{
+	width: 5em;
+	display: flex;
+	flex-direction: row;
+	padding: 0 2rem;
+	position: relative;
+	z-index: 2;
+}
+
+.c1{
+	font-size: 2rem;
+	font-weight: 900;
+	color: #33f;
+}
+
+.c2{
+	font-size: 2rem;
+	font-weight: 900;
+	color: #f33;
+}
+
+.t1{
+	opacity: 100%;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	animation-name: texteffecta;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+.t2{
+	opacity: 0%;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	animation-name: texteffectb;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes texteffecta{
+	0%{
+		opacity: 100%;
+	}
+	25%{
+		opacity: 100%;	
+	}
+	50%{
+		opacity: 0%;	
+	}
+	75%{
+		opacity: 0%;	
+	}
+	80%{
+		opacity: 0%;	
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+
+@keyframes texteffectb{
+	0%{
+		opacity: 0%;
+	}
+	20%{
+		opacity: 0%;	
+	}
+	40%{
+		opacity: 0%;	
+	}
+	50%{
+		opacity: 100%;	
+	}
+	60%{
+		opacity: 100%;
+	}
+
+	80%{
+		opacity: 0%;	
+	}
+	100%{
+		opacity: 0%;
+	}
+}
+
+.Projects{
+	width: 100%;
+	height: auto;
+}
+
+.project-container{
+	width:90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.project-container .project-sub{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.project-container .project-sub .box-set{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0.2rem;
+}
+
+.box-set .box{
+	width: 150px;
+	height: 150px;
+	border: 1px solid #111;
+	margin: 0.2rem;
+}
+
+.empty{
+	background-color: #333;
+}
+
+.project-tile{
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	position: relative;
+}
+
+.project-tile p{
+	font-family: "Raleway", Open Sans;
+	font-weight: 700;
+	margin: 0.7rem 0.7rem;
+}
+
+.project-tile img{
+	width: 100%;
+	height: 100%;
+	opacity: 25%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+}
+
+.project-tile img:hover{
+	width: 100%;
+	opacity: 100%;
+	transition: 0.2s;
+}
+
+.project-sub a{
+	text-decoration: none;
+}
+
+#profile-link .box{
+	background-color: #87aef1;
+}
+
+#profile-link .box:hover{
+	background-color: #c8dcdf;
+}
+
+#profile-link .box p{
+	font-family: "Raleway", Open Sans;
+	font-weight: 700;
+	margin: 0.7rem 0.7rem;
+}
+
+.icon-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.icon-box .icon{
+	width: 75px;
+	height: 75px;
+	margin: 2rem;
+}
+
+.icon-box .icon img{
+	width: 100%;
+}
+
+.icon-box .icon:hover{
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+@media (max-width: 670px){
+.nav{
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	padding-bottom: 0.5rem;
+}
+.nav ul{
+	width: 100%;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 0.2rem;
+}
+.nav ul li{
+	padding: 0.2rem;
+}
+.nav ul li a{
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #fff;
+	padding: 2rem;
+}
+.Welcome p{
+	font-size: 1.5rem;
+	font-family: ;
+	margin: 0;
+	padding: 0.3rem;
+}
+.Welcome h1{
+	font-size: 2.5rem;
+	font-family: ;
+	margin: 0;
+	padding: 0.2rem;
+}
+.section-title{
+	font-size: 2rem;
+	margin-left: 35px;
+}
+.project-container{
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem;
+}
+.icon-box{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
